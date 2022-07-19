@@ -67,6 +67,7 @@ img {
     border-radius: 5px;
     overflow: hidden;
     border: 2px solid #bf340a;
+    background-color: #bf340a;
 }
 
 .btn span {
@@ -98,6 +99,8 @@ img {
 
 .btn:hover {
     color: #bf340a;
+    transition: 0.2s;
+    background-color: transparent;
 }
 
 .btn:hover::before {
