@@ -41,6 +41,7 @@ img {
     align-items: center;
 }
 
+
 .half {
     width: 50%;
 }
@@ -315,6 +316,57 @@ button {
     text-align: center;
 }
 
+/* ------------------------------------------------ */
+/* Groups section */
+/* ------------------------------------------------ */
+.groups {
+    padding-left: 24px;
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+
+.group {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.line-b {
+    height: 2px;
+    width: 50px;
+    background: black;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.group-table {
+    width: 100%;
+    /* text-align: center; */
+    /* background: rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+.group-table td {
+    padding: 10px;
+    font-weight: 700;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    /* border-radius: 31px; */
+    background: #EEEEE4;
+}
+
+.group-table td:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.group-table td:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
 
 
 /* ------------------------------------------------ */
@@ -429,7 +481,8 @@ footer {
     }
 
     .schedules,
-    .blogs {
+    .blogs,
+    .groups {
         padding: 0;
     }
 }
@@ -504,6 +557,11 @@ footer {
         padding-left: 0;
     }
 
+    .groups {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0;
+    }
+
     .footer-menu {
         display: flex;
         width: 100%;
@@ -572,6 +630,11 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         padding-left: 0;
         padding-top: 24px;
+    }
+
+    .groups {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
     }
 
     .footer-menu {
